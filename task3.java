@@ -4,8 +4,8 @@ import java.io.*;
 
 public class task3 {
     public static void main(String[] args) throws IOException {
-//        writeToFile("task3.txt", "иди на хой1\nвернись обратно");
-        readFile("1.txt");
+        writeToFile("task3.txt", "Проверочная работа\nеще раз проверяю4");
+        readFile("task3.txt");
     }
 //    private static void  writeToFile(String path, String content){
 ////        File file = new File(path);
@@ -26,7 +26,7 @@ public class task3 {
 //        }
 //    }
 
-    //Сокращенный код запси файла
+//    Сокращенный код запси файла
     private static void  writeToFile(String path, String content){
 
            try(FileWriter fw = new FileWriter(path)) {

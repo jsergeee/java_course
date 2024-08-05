@@ -1,4 +1,4 @@
-public class Printer{
+public class Homemade {
     public static void main(String[] args){
 //        int n = 5;
 //        int t =  (n * (n + 1)) / 2;

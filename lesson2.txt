@@ -1,0 +1,14 @@
+.git
+.idea
+1.txt
+Homemade.java
+lec1.java
+MadeTask.java
+out
+README.md
+task1.java
+task2.java
+task3.java
+task3.txt
+Task4.java
+Task4_1.java
