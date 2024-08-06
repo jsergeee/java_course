@@ -2,7 +2,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Hm6_1 {
+public class Homework6_1 {
         public static void analyzeNumbers(Integer[] arr) {
             // Создаем список ArrayList и заполняем его числами из массива arr
             ArrayList<Integer> list = new ArrayList<>();

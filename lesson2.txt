@@ -1,10 +1,16 @@
 .git
 .idea
 1.txt
+Answer.java
+FileWriter.java
+Hm6.java
+homework6_1.java
 Homemade.java
 lec1.java
 lesson2.txt
+log.txt
 MadeTask.java
+MergeSort.java
 out
 README.md
 task1.java

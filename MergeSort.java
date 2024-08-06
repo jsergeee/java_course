@@ -9,24 +9,15 @@ public class MergeSort {
 
             mergeSort(arr, left, mid);
             mergeSort(arr, mid + 1, right);
-
             merge(arr, left, mid, right);
         }
     }
 
     public static void main(String[] args) {
         int[] arr = {5, 1, 6, 2, 3, 4};
-        System.out.println("Исходный массив:");
-        for (int num : arr) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
-
         mergeSort(arr, 0, arr.length - 1);
-
-        System.out.println("Отсортированный массив:");
         for (int num : arr) {
-            System.out.print(num + " ");
+            System.out.print(num +", ");
         }
 
     }
