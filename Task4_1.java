@@ -5,7 +5,7 @@ import java.util.SplittableRandom;
 
 public class Task4_1 {
     public static void main (String[] args){
-        writeToFile("lesson2.txt","C:\\Users\\1\\Documents\\java_course");
+        writeToFile("lesson2.txt","C:\\Users\\1\\Обучение_в _GB\\java_course\\seminar1\\java_course");
     }
 
      public static List<String> readDir(String path) throws RuntimeException {
