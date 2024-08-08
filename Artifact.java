@@ -4,7 +4,9 @@ public class Artifact {
     int number;
     static int count = 1;
 
-
+public void PrintA(){
+    System.out.println(count++);
+    }
 
     public Artifact(String name, String culture, int number){
         this.name = name;
@@ -22,7 +24,9 @@ public class Artifact {
         System.out.println("Номер по порядку " + count++ + " " + a.name + a.culture + " " + a.number);
         System.out.println("Номер по порядку " + count++ + " " + b.name + b.culture + " " + b.number);
         System.out.println("Номер по порядку " + count++ + " " + c.name + c.culture + " " + c.number);
-
+        a.PrintA();
+        a.PrintA();
+        b.PrintA();
     }
 
 }
