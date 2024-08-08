@@ -7,7 +7,7 @@ public class Worker2 {
     public Worker2(String name, int age){
         this.name = name;
         this.age = age;
-}
+    }
 public static void main(String[] args){
 
         Worker2 a = new Worker2("Иван",  20);
