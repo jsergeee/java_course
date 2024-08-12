@@ -17,13 +17,13 @@ public class HomeWorkForWorker {
         b.address = "Mira, 20";
         count++;
 
-//        System.out.println(jobn + a.name + " Возраст: " + a.age + " Работа: " + a.job);
-//        System.out.println("Имя: " + b.name + " Возраст: " + b.age + " Работа: " + b.job);
-//        System.out.println("Колич-во: "+ count);
+        System.out.println(jobn + a.name + " Возраст: " + a.age + " Работа: " + a.job);
+        System.out.println("Имя: " + b.name + " Возраст: " + b.age + " Работа: " + b.job);
+        System.out.println("Колич-во: "+ count);
 
         // В классе Worker создали методы печати public void PrintA() и public void PrintB()
-        b.PrintA();
-        b.PrintA();
+//        b.PrintA();
+//        b.PrintB();
     }
 
 }

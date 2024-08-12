@@ -19,8 +19,8 @@ public void PrintA(){
 
     public static void main(String[] args){
        Artifact a = new Artifact("Stek", "Romany", 12345);
-       Artifact b = new Artifact("", "Incas", 12346);
-       Artifact c = new Artifact("", "", 123457);
+       Artifact b = new Artifact("no name", "Incas", 12346);
+       Artifact c = new Artifact("no name", "no culture", 123457);
         System.out.println("Номер по порядку " + count++ + " " + a.name + a.culture + " " + a.number);
         System.out.println("Номер по порядку " + count++ + " " + b.name + b.culture + " " + b.number);
         System.out.println("Номер по порядку " + count++ + " " + c.name + c.culture + " " + c.number);
