@@ -25,6 +25,7 @@ public class Homework7 {
 
     // Основной метод для тестирования
     public static void main(String[] args) {
+
         IntegerArray integerArray = new IntegerArray(20);
         integerArray.printArray();
     }
