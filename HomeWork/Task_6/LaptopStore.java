@@ -13,8 +13,8 @@ public class LaptopStore {
                 new Laptop("Lenovo", 32, 512, "Windows", "White")
         ));
 
-        Map<String, Object> criteria = getCriteriaFromUser();
-        List<Laptop> filteredLaptops = filterLaptops(laptops, criteria);
+        Map<String, Object> param = getparamFromUser();
+        List<Laptop> filteredLaptops = filterLaptops(laptops, param);
 
         System.out.println("Filtered Laptops:");
         for (Laptop laptop : filteredLaptops) {
@@ -22,9 +22,9 @@ public class LaptopStore {
         }
     }
 
-    private static Map<String, Object> getCriteriaFromUser() {
+    private static Map<String, Object> getparamFromUser() {
         Scanner scanner = new Scanner(System.in);
-        Map<String, Object> criteria = new HashMap<>();
+        Map<String, Object> param = new HashMap<>();
 
         System.out.println("Введите цифру, соответствующую необходимому критерию:");
         System.out.println("1 - ОЗУ");
@@ -38,43 +38,43 @@ public class LaptopStore {
         switch (choice) {
             case 1:
                 System.out.print("Введите минимальный объем ОЗУ: ");
-                criteria.put("ram", scanner.nextInt());
+                param.put("ram", scanner.nextInt());
                 break;
             case 2:
                 System.out.print("Введите минимальный объем ЖД: ");
-                criteria.put("storage", scanner.nextInt());
+                param.put("storage", scanner.nextInt());
                 break;
             case 3:
                 System.out.print("Введите операционную систему: ");
-                criteria.put("os", scanner.nextLine());
+                param.put("os", scanner.nextLine());
                 break;
             case 4:
                 System.out.print("Введите цвет: ");
-                criteria.put("color", scanner.nextLine());
+                param.put("color", scanner.nextLine());
                 break;
             default:
                 System.out.println("Неверный выбор.");
         }
 
-        return criteria;
+        return param;
     }
 
-    private static List<Laptop> filterLaptops(Set<Laptop> laptops, Map<String, Object> criteria) {
+    private static List<Laptop> filterLaptops(Set<Laptop> laptops, Map<String, Object> param) {
         List<Laptop> filtered = new ArrayList<>();
 
         for (Laptop laptop : laptops) {
             boolean matches = true;
 
-            if (criteria.containsKey("ram") && laptop.getRam() < (int) criteria.get("ram")) {
+            if (param.containsKey("ram") && laptop.getRam() < (int) param.get("ram")) {
                 matches = false;
             }
-            if (criteria.containsKey("storage") && laptop.getStorage() < (int) criteria.get("storage")) {
+            if (param.containsKey("storage") && laptop.getStorage() < (int) param.get("storage")) {
                 matches = false;
             }
-            if (criteria.containsKey("os") && !laptop.getOs().equalsIgnoreCase((String) criteria.get("os"))) {
+            if (param.containsKey("os") && !laptop.getOs().equalsIgnoreCase((String) param.get("os"))) {
                 matches = false;
             }
-            if (criteria.containsKey("color") && !laptop.getColor().equalsIgnoreCase((String) criteria.get("color"))) {
+            if (param.containsKey("color") && !laptop.getColor().equalsIgnoreCase((String) param.get("color"))) {
                 matches = false;
             }
 
