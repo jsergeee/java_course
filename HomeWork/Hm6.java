@@ -1,3 +1,7 @@
+
+/*
+Логирование
+ */
 package HomeWork;
 
 import java.io.File;
