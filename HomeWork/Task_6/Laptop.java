@@ -3,11 +3,9 @@ package HomeWork.Task_6;
 import java.util.*;
 
 class Laptop {
-    private String brand;
-    private int ram;
-    private int storage;
-    private String os;
-    private String color;
+    String brand, os, color;
+    int ram, storage;
+
 
     public Laptop(String brand, int ram, int storage, String os, String color) {
         this.brand = brand;
