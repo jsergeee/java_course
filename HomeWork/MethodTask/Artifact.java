@@ -20,6 +20,7 @@ public void PrintA(){
 
 
     public static void main(String[] args){
+
        Artifact a = new Artifact("Stek", "Romany", 12345);
        Artifact b = new Artifact("no name", "Incas", 12346);
        Artifact c = new Artifact("no name", "no culture", 123457);

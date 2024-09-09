@@ -16,10 +16,12 @@ public class LaptopStore {
         Map<String, Object> param = getparamFromUser();
         List<Laptop> filteredLaptops = filterLaptops(laptops, param);
 
-        System.out.println("Filtered Laptops:");
+
         for (Laptop laptop : filteredLaptops) {
+            System.out.println("Filtered Laptops:");
             System.out.println(laptop);
         }
+
     }
 
     private static Map<String, Object> getparamFromUser() {
@@ -31,11 +33,13 @@ public class LaptopStore {
         System.out.println("2 - Объем ЖД");
         System.out.println("3 - Операционная система");
         System.out.println("4 - Цвет");
+        System.out.println("5 - Бренд");
 
         int choice = scanner.nextInt();
         scanner.nextLine();  // consume newline
 
         switch (choice) {
+
             case 1:
                 System.out.print("Введите минимальный объем ОЗУ: ");
                 param.put("ram", scanner.nextInt());
@@ -52,6 +56,10 @@ public class LaptopStore {
                 System.out.print("Введите цвет: ");
                 param.put("color", scanner.nextLine());
                 break;
+            case 5:
+                System.out.print("Введите бренд: ");
+                param.put("brand", scanner.nextLine());
+                break;
             default:
                 System.out.println("Неверный выбор.");
         }
@@ -65,10 +73,10 @@ public class LaptopStore {
         for (Laptop laptop : laptops) {
             boolean matches = true;
 
-            if (param.containsKey("ram") && laptop.getRam() < (int) param.get("ram")) {
+            if (param.containsKey("ram") && laptop.getRam() != (int) param.get("ram")) {
                 matches = false;
             }
-            if (param.containsKey("storage") && laptop.getStorage() < (int) param.get("storage")) {
+            if (param.containsKey("storage") && laptop.getStorage() != (int) param.get("storage")) {
                 matches = false;
             }
             if (param.containsKey("os") && !laptop.getOs().equalsIgnoreCase((String) param.get("os"))) {
@@ -77,7 +85,9 @@ public class LaptopStore {
             if (param.containsKey("color") && !laptop.getColor().equalsIgnoreCase((String) param.get("color"))) {
                 matches = false;
             }
-
+            if (param.containsKey("brand") && !laptop.getBrand().equalsIgnoreCase((String) param.get("brand"))) {
+                matches = false;
+            }
             if (matches) {
                 filtered.add(laptop);
             }
