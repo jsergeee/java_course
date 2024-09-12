@@ -22,6 +22,7 @@ public class LaptopStore {
             System.out.println(laptop);
         }
 
+
     }
 
     private static Map<String, Object> getparamFromUser() {
@@ -91,6 +92,7 @@ public class LaptopStore {
             if (matches) {
                 filtered.add(laptop);
             }
+
         }
 
         return filtered;
