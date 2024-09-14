@@ -27,9 +27,9 @@ public class TeacherControl {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter teacher index to update: ");
         int index = scanner.nextInt();
-        scanner.nextLine(); // consume newline character
+        scanner.nextLine(); // Создаем новую строку
 
-        // Check if the list of teachers is not empty
+        // Проверка, не пуст ли список преподавателей
         if (teacherService.getTeachers().size() >= index) {
             System.out.print("Enter new teacher name: ");
             String name = scanner.nextLine();
