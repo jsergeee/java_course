@@ -45,7 +45,7 @@ public class FamList {
 //        System.out.println(c);
 //        System.out.println(c.size());
 
-        List<Integer> d = IntStream.range(1,5).map(i -> i * 2).boxed().collect(Collectors.toList());
+        List<Integer> d = IntStream.range(1,10).map(i -> i * 1).boxed().collect(Collectors.toList());
         System.out.println("D" + d);
     }
 
