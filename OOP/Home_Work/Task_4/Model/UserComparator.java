@@ -1,4 +1,4 @@
-package OOP.Home_Work.Task_4.Data;
+package OOP.Home_Work.Task_4.Model;
 
 import java.util.Comparator;
 

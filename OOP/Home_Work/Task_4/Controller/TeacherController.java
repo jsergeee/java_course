@@ -2,7 +2,7 @@ package OOP.Home_Work.Task_4.Controller;
 
 
 
-import OOP.Home_Work.Task_4.Data.Teacher;
+import OOP.Home_Work.Task_4.Model.Teacher;
 import OOP.Home_Work.Task_4.Servise.TeacherService;
 import OOP.Home_Work.Task_4.View.TeacherView;
 

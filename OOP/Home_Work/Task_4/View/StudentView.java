@@ -1,7 +1,7 @@
 package OOP.Home_Work.Task_4.View;
 
-import OOP.Home_Work.Task_4.Data.Student;
-import OOP.Home_Work.Task_4.Data.StudentGroup;
+import OOP.Home_Work.Task_4.Model.Student;
+import OOP.Home_Work.Task_4.Model.StudentGroup;
 
 
 import java.util.List;

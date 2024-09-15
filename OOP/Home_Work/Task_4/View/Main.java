@@ -1,8 +1,6 @@
 package OOP.Home_Work.Task_4.View;
 
 import OOP.Home_Work.Task_4.Controller.TeacherController;
-import OOP.Home_Work.Task_4.Data.Student;
-import OOP.Home_Work.Task_4.Data.Teacher;
 import OOP.Home_Work.Task_4.Servise.StudentGroupService;
 import OOP.Home_Work.Task_4.Servise.StudentService;
 import OOP.Home_Work.Task_4.Servise.TeacherService;

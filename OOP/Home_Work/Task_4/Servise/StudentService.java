@@ -1,11 +1,6 @@
 package OOP.Home_Work.Task_4.Servise;
 
-import OOP.Home_Work.Task_4.Data.Student;
-import OOP.Home_Work.Task_4.Data.StudentGroup;
-import OOP.Home_Work.Task_4.Data.StudentGroupIterator;
-import OOP.Home_Work.Task_4.Data.Teacher;
-import OOP.Home_Work.Task_4.Data.User;
-import OOP.Home_Work.Task_4.Data.UserComparator;
+import OOP.Home_Work.Task_4.Model.Student;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

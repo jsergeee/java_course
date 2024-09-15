@@ -2,7 +2,7 @@ package OOP.Home_Work.Task_4.View;
 
 
 
-import OOP.Home_Work.Task_4.Data.Teacher;
+import OOP.Home_Work.Task_4.Model.Teacher;
 
 import java.util.List;
 import java.util.logging.Logger;
