@@ -3,12 +3,13 @@ package OOP.Home_Work.Task_4.Data;
 import java.time.LocalDate;
 import java.util.Comparator;
 
-public class Teacher extends User{
+public class Teacher extends User {
 
     private Long teacherId;
 
-    public Teacher(String firstName, String secondName, String patronymic, LocalDate dateOfBirth) {
+    public Teacher(String firstName, String secondName, String patronymic, LocalDate dateOfBirth, Long countMaxId) {
         super(firstName, secondName, patronymic, dateOfBirth);
+        this.teacherId = countMaxId;
     }
 
     public Long getTeacherId() {
@@ -19,10 +20,11 @@ public class Teacher extends User{
         this.teacherId = teacherId;
     }
 
-    public static class TeacherComparator implements Comparator {
+    public static class TeacherComparator implements Comparator<Teacher> {
         @Override
-        public int compare(Object o1, Object o2) {
-            return 0;
+        public int compare(Teacher o1, Teacher o2) {
+            // Implement comparison logic here
+            return 0; // Placeholder return value
         }
     }
 }
