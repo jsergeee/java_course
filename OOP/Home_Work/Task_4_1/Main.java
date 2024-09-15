@@ -1,4 +1,4 @@
-package OOP.Home_Work.Task_4;
+package OOP.Home_Work.Task_4_1;
 
 public class Main {
     public static void main(String[] args) {
