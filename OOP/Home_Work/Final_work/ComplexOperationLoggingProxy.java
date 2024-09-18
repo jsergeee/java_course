@@ -12,10 +12,10 @@ public class ComplexOperationLoggingProxy implements ComplexOperation {
 
     @Override
     public ComplexNumber execute(ComplexNumber a, ComplexNumber b) {
-        logger.info("Executing operation: " + operation.getClass().getSimpleName());
-        logger.info("Operands: " + a + ", " + b);
+        logger.info("Произведенная операция: " + operation.getClass().getSimpleName());
+        logger.info("Произведенное действие: " + a + ", " + b);
         ComplexNumber result = operation.execute(a, b);
-        logger.info("Result: " + result);
+        logger.info("Результат: " + result);
         return result;
     }
 }

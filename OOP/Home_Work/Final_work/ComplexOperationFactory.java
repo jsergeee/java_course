@@ -3,10 +3,10 @@ package OOP.Home_Work.Final_work;
 public class ComplexOperationFactory {
     public ComplexOperation createOperation(String type) {
         return switch (type) {
-            case "add", "+" -> new ComplexOperationLoggingProxy(new AdditionOperation());
-            case "multiply", "*" -> new ComplexOperationLoggingProxy(new MultiplicationOperation());
-            case "divide", "/" -> new ComplexOperationLoggingProxy(new DivisionOperation());
-            default -> throw new IllegalArgumentException("Unknown operation type: " + type);
+            case "плюс", "+" -> new ComplexOperationLoggingProxy(new AdditionOperation());
+            case "умножить", "*" -> new ComplexOperationLoggingProxy(new MultiplicationOperation());
+            case "делить", "/" -> new ComplexOperationLoggingProxy(new DivisionOperation());
+            default -> throw new IllegalArgumentException("Недопустимое действие: " + type);
         };
     }
 }

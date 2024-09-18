@@ -10,19 +10,19 @@ public class ConsoleIO {
     }
 
     public ComplexNumber readComplexNumber() {
-        System.out.print("Enter real part: ");
+        System.out.print("Введите действительное число: ");
         double real = scanner.nextDouble();
-        System.out.print("Enter imaginary part: ");
+        System.out.print("Введите мнимое число: ");
         double imaginary = scanner.nextDouble();
         return new ComplexNumber(real, imaginary);
     }
 
     public String readOperation() {
-        System.out.print("Enter operation (add/multiply/divide): ");
+        System.out.print("Введите арифметическое дейсвие(+, *, /): ");
         return scanner.next();
     }
 
     public void printResult(ComplexNumber result) {
-        System.out.println("Result: " + result);
+        System.out.println("Результат: " + result);
     }
 }
